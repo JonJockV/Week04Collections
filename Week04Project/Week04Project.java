@@ -57,9 +57,13 @@ public class Week04Project {
 		}
 		System.out.println(sum);
 		
+		
+		
+		//Testing averageMaker method
 		double[] doubArray = new double[] {1, 2, 24, 55, 12, 6, 24};
 		System.out.println(averageMaker(doubArray));
 		
+		//Testing sentenceMaker method
 		List<String> newList = new ArrayList<String>();
 		newList.add("Hello");
 		newList.add("My");
