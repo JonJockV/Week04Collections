@@ -126,9 +126,11 @@ public class Week04Project {
 		for (double number : array1) {
 			average1 += number;
 		}
+		average1 = average1 / array1.length;
 		for (double number : array2) {
 			average2 += number;
 		}
+		average2 = average2 / array2.length;
 		if(average1 > average2) {
 			return true;
 		} else {
@@ -149,12 +151,12 @@ public class Week04Project {
 	 * This method would be used when you need to concatenate a list
 	 * of Strings together to create a sentence.
 	 */
-	public static String sentenceMaker(List<String> strList) {
+	public static StringBuilder sentenceMaker(List<String> strList) {
 		//Start with an empty String
-		String sentence = "";
+		StringBuilder sentence = new StringBuilder();
 		//Iterate over the incoming list of Strings and add that to the sentence variable followed by a space
 		for (String string : strList) {
-			sentence += string + " ";
+			sentence.append(string + " ");
 		}
 		//Finally return the resulting sentence
 		return sentence;
